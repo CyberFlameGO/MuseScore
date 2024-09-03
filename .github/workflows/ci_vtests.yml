@@ -138,12 +138,12 @@ jobs:
     - name: Clone repository
       uses: actions/checkout@v2
     - name: Download current PNGs
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Current PNGs
         path: ./current_pngs
     - name: Download reference PNGs
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Reference PNGs
         path: ./reference_pngs
